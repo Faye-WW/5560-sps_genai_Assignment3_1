@@ -1,0 +1,67 @@
+# =========================
+# Python cache and temp files
+# =========================
+__pycache__/
+*.py[oc]
+*.pyo
+*.log
+*.tmp
+
+# =========================
+# Build artifacts
+# =========================
+build/
+dist/
+wheels/
+*.egg-info
+
+# =========================
+# Virtual environments
+# =========================
+.venv/
+env/
+venv/
+
+# =========================
+# Jupyter checkpoints
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# macOS metadata
+# =========================
+.DS_Store
+
+# =========================
+# Dataset (skip raw data, keep models)
+# =========================
+data/
+*.tar.gz
+*.zip
+*.npz
+
+# =========================
+# Git and editor metadata
+# =========================
+.git/
+.gitignore
+.gitattributes
+.vscode/
+.idea/
+
+# =========================
+# Docker build files themselves
+# =========================
+Dockerfile
+.dockerignore
+
+# =========================
+# Optional local test script
+# =========================
+sanity_check.py
+
+# =========================
+# ✅ Keep pre-trained weights
+# =========================
+!models/cnn.pt
+!artifacts/generator.pt

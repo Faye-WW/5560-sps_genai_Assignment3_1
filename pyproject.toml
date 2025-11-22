@@ -1,0 +1,20 @@
+[project]
+name = "sps-genai"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi[standard]>=0.117.1",
+    "numpy<2.0",
+    "pillow>=12.0.0",
+    "pydantic>=2.11.9",
+    "python-multipart>=0.0.20",
+    "spacy>=3.8.7",
+    "torch==2.2.2",
+    "torchvision==0.17.2",
+    "uvicorn[standard]>=0.36.0",
+
+    # spaCy model
+    "en-core-web-md @ https://github.com/explosion/spacy-models/releases/download/en_core_web_md-3.8.0/en_core_web_md-3.8.0-py3-none-any.whl",
+]
